@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Полный путь сложного неврологического пациента — конференция 27–29 ноября, Краснодар</title>
+<meta name="description" content="Практическая конференция для ветеринарных врачей общей практики, терапевтов и хирургов. 27–29 ноября, Краснодар.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Unbounded:wght@700;800;900&family=Cormorant+Garamond:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F5F8FF; --warm-white:#FAFCFF; --sand:#E4ECF7; --sand-mid:#CDD9EE;
+  --forest:#1A3A6B; --forest-mid:#1E4D8C; --forest-light:#3A72C4; --forest-pale:#BDD0F0; --forest-faint:#EBF1FC;
+  --amber:#0077C8; --amber-light:#90C0F0; --amber-pale:#E0EEFC;
+  --text-dark:#0D1B33; --text-mid:#2B3F60; --text-soft:#5A6E8F; --text-muted:#8A9DB8;
+  --shadow-sm:0 2px 12px rgba(26,58,107,.08); --shadow-md:0 6px 30px rgba(26,58,107,.12); --shadow-lg:0 16px 60px rgba(26,58,107,.18);
+  --radius:20px; --radius-sm:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Onest',sans-serif;color:var(--text-dark);background:var(--warm-white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+::selection{background:var(--forest-pale)}
+:focus-visible{outline:2.5px solid var(--amber);outline-offset:2px}
+
+/* ===== HEADER ===== */
+header{position:sticky;top:0;z-index:1000;background:rgba(245,248,255,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--sand)}
+header::before{content:'';display:block;height:3px;background:linear-gradient(90deg,#1A3A6B 0%,#3A72C4 50%,#0099E6 100%)}
+.nav-in{max-width:1280px;margin:0 auto;padding:0 2.5rem;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:46px;height:46px;border-radius:12px;background:var(--forest);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.brand-text b{display:block;font-family:'Unbounded',sans-serif;font-size:14.5px;font-weight:800;color:var(--forest);letter-spacing:-.01em;line-height:1.25}
+.brand-text span{display:block;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);margin-top:2px}
+.quicknav{display:flex;gap:2px;align-items:center;flex-wrap:wrap}
+.quicknav a{text-decoration:none;color:var(--text-mid);font-weight:650;font-size:13.5px;padding:9px 12px;border-radius:9px;transition:.2s;white-space:nowrap}
+.quicknav a:hover{color:var(--forest);background:var(--forest-faint)}
+.quicknav .call{background:var(--forest);color:#fff!important;border-radius:10px;padding:10px 16px;margin-left:4px;font-weight:700}
+.quicknav .call:hover{background:var(--forest-mid)}
+@media(max-width:900px){.quicknav a:not(.call){display:none}}
+@media(max-width:480px){.brand-text span{display:none}.brand-mark{width:40px;height:40px;font-size:17px}}
+
+/* ===== ICONS ===== */
+.ic{width:1em;height:1em;display:inline-block;vertical-align:-0.15em;flex-shrink:0}
+.ic-lg{width:56px;height:56px;stroke:var(--forest);stroke-width:1.5}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.25,.8,.25,1),transform .7s cubic-bezier(.25,.8,.25,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal-stagger.in{transition-delay:calc(var(--i,0) * 70ms)}
+.btn-primary{background:var(--forest);color:var(--warm-white);padding:15px 28px;border-radius:var(--radius-sm);font-size:15px;font-weight:700;cursor:pointer;border:none;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .25s;font-family:'Onest',sans-serif}
+.btn-primary:hover{background:var(--forest-mid);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-outline{background:transparent;color:var(--forest);border:1.5px solid var(--forest);padding:13.5px 26px;border-radius:var(--radius-sm);font-size:15px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .25s;font-family:'Onest',sans-serif}
+.btn-outline:hover{background:var(--forest-faint);transform:translateY(-2px)}
+
+/* ===== EVENT HERO ===== */
+.event-hero-wrap{padding:36px 2.5rem 0;max-width:1280px;margin:0 auto}
+.event-hero-banner{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);position:relative;margin-bottom:2.5rem;background:var(--forest);aspect-ratio:16/9}
+.event-hero-banner img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;transition:transform .6s cubic-bezier(.25,.8,.25,1)}
+.event-hero-banner:hover img{transform:scale(1.035)}
+.event-hero-tag{position:absolute;top:20px;left:20px;background:var(--amber);color:#fff;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:8px 16px;border-radius:50px;box-shadow:var(--shadow-sm);display:inline-flex;align-items:center;gap:6px}
+
+/* ===== LAYOUT ===== */
+.event-layout{display:grid;grid-template-columns:1fr 340px;gap:2.5rem;max-width:1280px;margin:0 auto;padding:0 2.5rem 90px;align-items:start}
+.event-main h1{font-family:'Unbounded',sans-serif;font-size:clamp(24px,3.4vw,38px);font-weight:800;color:var(--text-dark);line-height:1.18;letter-spacing:-.03em;margin-bottom:1rem}
+.event-sub{font-size:16px;color:var(--text-soft);line-height:1.7;margin-bottom:2rem;max-width:640px}
+.event-meta-pills{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.6rem}
+.event-pill{display:inline-flex;align-items:center;gap:8px;background:var(--forest-faint);border:1px solid var(--forest-pale);color:var(--forest);font-size:13px;font-weight:700;padding:8px 16px;border-radius:50px}
+.event-cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:2.6rem}
+
+.event-block{margin-bottom:3rem}
+.event-block h2{font-family:'Unbounded',sans-serif;font-size:22px;font-weight:800;color:var(--text-dark);margin-bottom:1.2rem;letter-spacing:-.02em}
+
+.speakers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;perspective:1200px}
+.speaker-card{background:var(--warm-white);border:1px solid var(--sand);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .25s cubic-bezier(.25,.8,.25,1),box-shadow .25s;transform-style:preserve-3d;will-change:transform}
+.speaker-card:hover{box-shadow:var(--shadow-md)}
+.speaker-card.speaker-main{border-color:var(--forest-pale);box-shadow:0 8px 34px rgba(26,58,107,.16)}
+.speaker-photo{aspect-ratio:5/9;overflow:hidden;background:var(--sand);position:relative}
+.speaker-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .5s cubic-bezier(.25,.8,.25,1)}
+.speaker-card:hover .speaker-photo img{transform:scale(1.045)}
+.speaker-body{padding:1.2rem 1.3rem 1.5rem;position:relative}
+.speaker-role{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--forest-light);margin-bottom:6px}
+.speaker-name{font-family:'Unbounded',sans-serif;font-size:16px;font-weight:800;color:var(--text-dark);letter-spacing:-.02em;margin-bottom:6px}
+.speaker-desc{font-size:13px;color:var(--text-soft);line-height:1.6}
+
+.program-list{border-left:2px solid var(--sand-mid);padding-left:1.6rem}
+.program-item{position:relative;padding-bottom:1.8rem}
+.program-item:last-child{padding-bottom:0}
+.program-item::before{content:'';position:absolute;left:-1.72rem;top:6px;width:11px;height:11px;border-radius:50%;background:var(--forest-light);border:3px solid var(--warm-white);box-shadow:0 0 0 2px var(--forest-light)}
+.program-time{display:inline-block;font-family:'Unbounded',sans-serif;font-size:13px;font-weight:800;color:var(--forest);background:var(--forest-faint);padding:4px 12px;border-radius:8px;margin-bottom:8px}
+.program-title{font-size:16px;font-weight:800;color:var(--text-dark);margin-bottom:2px;line-height:1.4}
+.program-speaker{font-size:13px;font-style:italic;color:var(--forest-light);font-weight:600;margin-bottom:6px}
+.program-desc{font-size:14px;color:var(--text-soft);line-height:1.65}
+.program-item.is-break .program-title{color:var(--text-muted);font-weight:700}
+.program-item.is-break::before{background:var(--sand-mid);box-shadow:0 0 0 2px var(--sand-mid)}
+
+.event-register-band{border-radius:var(--radius);overflow:hidden;position:relative;padding:64px 2.5rem;text-align:center;background:radial-gradient(120% 160% at 15% 0%,#1E4D8C 0%,#122A50 46%,#0B1B37 100%)}
+.event-register-band::before{content:'';position:absolute;inset:0;background:radial-gradient(60% 90% at 88% 100%,rgba(58,114,196,.45),transparent 70%);z-index:0}
+.event-register-band::after{content:'';position:absolute;width:340px;height:340px;border-radius:50%;border:1px solid rgba(255,255,255,.08);top:-120px;right:-80px;z-index:0}
+.event-register-inner{position:relative;z-index:2;max-width:640px;margin:0 auto}
+.event-register-inner h2{font-family:'Unbounded',sans-serif;font-size:clamp(22px,3vw,32px);font-weight:800;color:#fff;margin-bottom:.8rem;letter-spacing:-.03em}
+.event-register-inner p{color:rgba(255,255,255,.82);font-size:15px;margin-bottom:1.8rem}
+.event-register-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+.event-sidebar{position:sticky;top:96px;display:flex;flex-direction:column;gap:1.4rem}
+.event-info-card,.event-contact-card,.event-share-card{background:var(--warm-white);border:1px solid var(--sand);border-radius:var(--radius);padding:1.6rem 1.5rem;box-shadow:var(--shadow-sm)}
+.event-info-card h3,.event-contact-card h3,.event-share-card h3{font-family:'Unbounded',sans-serif;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--forest-light);margin-bottom:1.1rem}
+.event-info-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:1.1rem}
+.event-info-row:last-child{margin-bottom:0}
+.event-info-row .ei{font-size:20px;flex-shrink:0}
+.event-info-row div strong{display:block;font-size:15px;color:var(--text-dark);font-weight:700}
+.event-info-row div span{font-size:13px;color:var(--text-soft)}
+.event-contact-link{display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:var(--radius-sm);background:var(--cream);text-decoration:none;color:var(--text-dark);font-weight:700;font-size:14px;margin-bottom:8px;transition:all .2s}
+.event-contact-link:last-child{margin-bottom:0}
+.event-contact-link:hover{background:var(--forest-faint);transform:translateX(3px)}
+.event-contact-note{font-size:12px;color:var(--text-muted);margin-top:.6rem;line-height:1.5}
+.event-promo-card{background:linear-gradient(155deg,var(--forest-faint) 0%,var(--warm-white) 60%);border:1.5px solid var(--forest-pale);border-radius:var(--radius);padding:1.6rem 1.5rem;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
+.event-promo-card::before{content:'−20%';position:absolute;top:-14px;right:-14px;background:var(--amber);color:#fff;font-family:'Unbounded',sans-serif;font-weight:800;font-size:13px;padding:22px 14px 6px;border-radius:0 0 0 14px;letter-spacing:-.01em}
+.event-promo-card h3{font-family:'Unbounded',sans-serif;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--forest-light);margin-bottom:.7rem;padding-right:3.2rem}
+.event-promo-card p{font-size:13.5px;color:var(--text-soft);line-height:1.6;margin-bottom:1rem}
+.event-promo-card p b{color:var(--text-dark)}
+.event-promo-card .event-contact-link{background:#fff}
+.share-buttons{display:flex;gap:10px;flex-wrap:wrap}
+.share-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:50px;font-size:13.5px;font-weight:700;cursor:pointer;text-decoration:none;border:none;transition:all .25s;font-family:'Onest',sans-serif}
+.share-btn:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.share-vk{background:#4a76a8;color:#fff}
+.share-tg{background:#0088cc;color:#fff}
+.share-copy{background:var(--text-dark);color:#fff}
+
+@media(max-width:1024px){.event-layout{grid-template-columns:1fr}.event-sidebar{position:static}}
+@media(max-width:720px){.speakers-grid{grid-template-columns:1fr 1fr}.event-hero-wrap,.event-layout{padding-left:1.2rem;padding-right:1.2rem}}
+@media(max-width:480px){.speakers-grid{grid-template-columns:1fr}.event-register-band{padding:40px 1.3rem}}
+
+/* ===== MODAL ===== */
+.modal-overlay{position:fixed;inset:0;background:rgba(13,27,51,.65);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:2000;display:none;align-items:flex-start;justify-content:center;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.modal-overlay.open{display:flex}
+.modal{background:var(--warm-white);border-radius:24px;padding:3rem 2rem 2rem;width:100%;max-width:500px;box-shadow:var(--shadow-lg);position:relative;animation:slideUp .35s cubic-bezier(.34,1.56,.64,1);margin:1rem auto;flex-shrink:0}
+@media(max-width:520px){.modal{border-radius:20px 20px 0 0;margin:auto 0 0 0;padding:1rem 1.2rem 2rem;max-width:100%}.modal-overlay{align-items:flex-end}}
+.modal-close{position:sticky;top:0;float:right;margin:0 0 .5rem .5rem;background:var(--forest);border:none;border-radius:50%;width:42px;height:42px;cursor:pointer;font-size:20px;color:#fff;display:flex;align-items:center;justify-content:center;transition:background .2s;z-index:10;box-shadow:0 4px 12px rgba(26,58,107,.3);flex-shrink:0}
+.modal-close:hover{background:var(--forest-mid)}
+@keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+.modal-eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--forest-light);margin-bottom:8px}
+.modal h2{font-family:'Unbounded',sans-serif;font-size:24px;color:var(--text-dark);margin-bottom:.4rem;font-weight:800;letter-spacing:-.03em}
+.modal-sub{font-size:14px;color:var(--text-soft);margin-bottom:2rem;line-height:1.6}
+.form-group{margin-bottom:1.2rem}
+.form-group label{display:block;font-size:12px;font-weight:600;color:var(--text-soft);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em}
+.form-group input,.form-group textarea{width:100%;padding:13px 16px;border:1.5px solid var(--sand-mid);border-radius:var(--radius-sm);font-family:'Onest',sans-serif;font-size:15px;color:var(--text-dark);background:var(--cream);transition:all .2s;-webkit-appearance:none}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(26,58,107,.12)}
+.form-group textarea{height:90px;resize:vertical}
+.form-success{text-align:center;padding:1rem 0}
+.form-success .check{font-size:60px;margin-bottom:1rem}
+.form-success h3{font-family:'Unbounded',sans-serif;font-size:22px;color:var(--forest);margin-bottom:.5rem;font-weight:800}
+.form-success p{color:var(--text-soft);font-size:15px;line-height:1.7}
+
+/* ===== FOOTER ===== */
+footer{background:#07142A;color:rgba(255,255,255,.7);padding:44px 0 0;margin-top:20px}
+.foot-in{max-width:1280px;margin:0 auto;padding:0 2.5rem;text-align:center}
+.foot-brand{font-family:'Unbounded',sans-serif;font-size:17px;font-weight:800;color:#fff;margin-bottom:10px}
+.foot-in p{font-size:14px;line-height:1.7;max-width:560px;margin:0 auto 6px;color:rgba(255,255,255,.62)}
+.foot-bottom{margin-top:30px;padding:20px 2.5rem;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-size:12.5px;color:rgba(255,255,255,.4)}
+.top-btn{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border:0;border-radius:14px;background:var(--forest);color:#fff;font-size:19px;font-weight:900;box-shadow:var(--shadow-lg);cursor:pointer;z-index:50;transition:.2s}
+.top-btn:hover{background:var(--forest-mid);transform:translateY(-3px)}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--text-dark);color:#fff;padding:13px 22px;border-radius:50px;font-size:14px;font-weight:600;box-shadow:var(--shadow-lg);z-index:3000;opacity:0;pointer-events:none;transition:.3s}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark"><svg class="ic" viewBox="0 0 24 24" style="width:22px;height:22px;stroke:#fff;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M4.8 2v6.4a4.8 4.8 0 0 0 9.6 0V2"/><path d="M9.6 15.2V22"/><circle cx="18.4" cy="8.4" r="2.4"/></svg></span>
+      <span class="brand-text"><b>Конференция для ветврачей</b><span>27–29 ноября · Краснодар</span></span>
+    </a>
+    <nav class="quicknav">
+      <a href="#about">О конференции</a>
+      <a href="#speakers">Лекторы</a>
+      <a href="#program">Программа</a>
+      <a class="call" href="tel:+79166574066">Позвонить</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="event-hero-wrap">
+    <div class="event-hero-banner">
+      <span class="event-hero-tag"><svg class="ic" viewBox="0 0 24 24" style="stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Открыта регистрация</span>
+      <img src="event-hero-cat.jpg" alt="Конференция «Полный путь сложного неврологического пациента» 27–29 ноября">
+    </div>
+  </div>
+
+  <div class="event-layout">
+    <div class="event-main">
+
+      <h1>Полный путь сложного неврологического пациента: от приёма до выписки</h1>
+      <p class="event-sub">Практическая конференция для ветеринарных врачей общей практики, терапевтов и хирургов — весь путь пациента одним днём: сортировка, диагностика, операция, реанимация и юридически грамотное оформление случая.</p>
+
+      <div class="event-meta-pills">
+        <span class="event-pill"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><rect x="3" y="4" width="18" height="18" rx="3"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 27–29 ноября 2026</span>
+        <span class="event-pill"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg> 10:00 – 18:00</span>
+        <span class="event-pill"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.8"/></svg> Краснодар</span>
+        <span class="event-pill"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M22 9L12 4 2 9l10 5 10-5z"/><path d="M6 11.5V17c0 1.4 2.7 3 6 3s6-1.6 6-3v-5.5"/></svg> Для практикующих врачей</span>
+      </div>
+
+      <div class="event-cta-row">
+        <button class="btn-primary" onclick="openEventModal()">Записаться на конференцию →</button>
+        <a href="#program" class="btn-outline">Смотреть программу</a>
+      </div>
+
+      <div class="event-block" id="about">
+        <h2>О конференции</h2>
+        <p class="event-sub" style="margin-bottom:0;">Однодневная программа построена вокруг «полного пути» сложного неврологического пациента — от первых 15 минут приёма и сортировки до хирургического решения, послеоперационного мониторинга и выписки. Отдельный блок посвящён юридической стороне работы врача: как собирать и хранить доказательную базу на случай спора с владельцем животного. В программе — разбор реальных клинических случаев и сессии вопросов и ответов после каждого блока.</p>
+      </div>
+
+      <div class="event-block" id="speakers">
+        <h2>Лекторы</h2>
+        <div class="speakers-grid">
+
+          <div class="speaker-card">
+            <div class="speaker-photo"><img src="speaker-mitrofanova.jpg" alt="Валерия Митрофанова"></div>
+            <div class="speaker-body">
+              <div class="speaker-role">ОРИТ, интенсивная терапия</div>
+              <div class="speaker-name">Валерия Митрофанова</div>
+              <div class="speaker-desc">Ведёт блоки стабилизации и инфузионной терапии, а также послеоперационного мониторинга в ОРИТ, включая наблюдение после CPR у неврологических пациентов.</div>
+            </div>
+          </div>
+
+          <div class="speaker-card speaker-main">
+            <div class="speaker-photo"><img src="speaker-sotnikov.jpg" alt="Владимир Сотников"></div>
+            <div class="speaker-body">
+              <div class="speaker-role">Неврология, нейрохирургия</div>
+              <div class="speaker-name">Владимир Сотников</div>
+              <div class="speaker-desc">Три сессии дня: приём и сортировка экстренного пациента, невроосмотр и дифференциальная диагностика, визуальная диагностика (МРТ), хирургическое решение и прогноз, разбор ошибок.</div>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-photo"><img src="speaker-kyullinen.jpg" alt="Виктория Кюллинен"></div>
+            <div class="speaker-body">
+              <div class="speaker-role">Юридические аспекты</div>
+              <div class="speaker-name">Виктория Кюллинен</div>
+              <div class="speaker-desc">Юридический блок: управление доказательной базой в ветеринарной практике — чеки, медицинские записи, фото- и видеоматериалы, переписка с клиентами.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="event-block" id="program">
+        <h2>Программа дня</h2>
+        <div class="program-list">
+
+          <div class="program-item">
+            <div class="program-time">10:00 – 10:10</div>
+            <div class="program-title">Открытие конференции</div>
+            <div class="program-desc">Вступительное слово организаторов. Представление концепции «полный путь пациента», целей мероприятия и спикеров.</div>
+          </div>
+
+          <div class="program-item">
+            <div class="program-time">10:10 – 11:25</div>
+            <div class="program-title">Юридический блок — «Управление доказательной базой в ветеринарной практике»</div>
+            <div class="program-speaker">Лектор: Виктория Кюллинен</div>
+            <div class="program-desc">Как правильно собирать и хранить чеки, медицинские записи, фото- и видеоматериалы, переписку с клиентами, чтобы защитить позицию ветеринара в случае судебного разбирательства. В конце блока — сессия вопросов и ответов.</div>
+          </div>
+
+          <div class="program-item is-break">
+            <div class="program-time">11:25 – 11:40</div>
+            <div class="program-title">Перерыв</div>
+          </div>
+
+          <div class="program-item">
+            <div class="program-time">11:40 – 12:30</div>
+            <div class="program-title">Этап «Приём и сортировка» — «Экстренный пациент в первые 15 минут: триаж, кислород, венозный доступ, боль»</div>
+            <div class="program-speaker">Лектор: Владимир Сотников</div>
+            <div class="program-desc">Красный / жёлтый / зелёный пациент, критерии очерёдности, алгоритмы действий при одышке, судорогах, шоке, травме, коллапсе. Пять обязательных параметров, которые надо измерять всегда, и роль ассистента в экономии времени.</div>
+          </div>
+
+          <div class="program-item">
+            <div class="program-time">12:30 – 13:20</div>
+            <div class="program-title">Этап «Невроосмотр и дифференциальная диагностика» — «Собака не ходит задними лапами: первые 60 минут решают тактику»</div>
+            <div class="program-speaker">Лектор: Владимир Сотников</div>
+            <div class="program-desc">Дифференциалы: IVDD, травма, FCE, опухоль, воспаление. Как оценивать глубокую боль, когда МРТ необходимо срочно, когда операция должна быть выполнена сегодня, и типичные ошибки: «укололи и отпустили», «подождём до завтра», «пусть походит».</div>
+          </div>
+
+          <div class="program-item is-break">
+            <div class="program-time">13:20 – 14:00</div>
+            <div class="program-title">Обеденный перерыв</div>
+          </div>
+
+          <div class="program-item">
+            <div class="program-time">14:00 – 14:45</div>
+            <div class="program-title">Этап «Стабилизация и инфузионная терапия» — «Шок без паники: как понять тип шока и не залить пациента лишней инфузией»</div>
+            <div class="program-speaker">Лектор: Валерия Митрофанова</div>
+            <div class="program-desc">Гиповолемический, септический, кардиогенный и обструктивный шок. Критерии оценки лактата, артериального давления, тактика болюсного введения, применение вазопрессоров, показания к переливанию крови.</div>
+          </div>
+
+          <div class="program-item">
+            <div class="program-time">14:45 – 15:35</div>
+            <div class="program-title">Этап «Визуальная диагностика» — «МРТ позвоночника: что должен понимать хирург и терапевт»</div>
+            <div class="program-speaker">Лектор: Владимир Сотников</div>
+            <div class="program-desc">Ключевые находки: компрессия, миелопатия, отёк, кровоизлияние, множественные поражения дисков. Ситуации, когда МРТ не объясняет клинические симптомы — и что делать в таких случаях.</div>
+          </div>
+
+          <div class="program-item is-break">
+            <div class="program-time">15:35 – 15:50</div>
+            <div class="program-title">Перерыв</div>
+          </div>
+
+          <div class="program-item">
+            <div class="program-time">15:50 – 16:40</div>
+            <div class="program-title">Этап «Хирургическое решение и прогноз» — «Болезнь диска: кому операция, кому консервативно, кому реабилитация»</div>
+            <div class="program-speaker">Лектор: Владимир Сотников</div>
+            <div class="program-desc">По степеням неврологического дефицита: боль без пареза, парез с сохранённой ходьбой, паралич с глубокой болью, паралич без глубокой боли. Алгоритмы ведения после операции и честные прогнозы для каждого варианта.</div>
+          </div>
+
+          <div class="program-item">
+            <div class="program-time">16:40 – 17:25</div>
+            <div class="program-title">Этап «ОРИТ (послеоперационный мониторинг)» — «Мониторинг после CPR в неврологических пациентах»</div>
+            <div class="program-speaker">Лектор: Валерия Митрофанова</div>
+            <div class="program-desc">Восстановление сознания, поддержание гемодинамики, контроль судорог, профилактика вторичного повреждения головного и спинного мозга. Алгоритм действий в первые часы после реанимации.</div>
+          </div>
+
+          <div class="program-item">
+            <div class="program-time">17:25 – 17:55</div>
+            <div class="program-title">Этап «Разбор ошибок → выписка» — «5 пациентов, которых нельзя было отпускать домой»</div>
+            <div class="program-speaker">Лектор: Владимир Сотников</div>
+            <div class="program-desc">Разбор реальных клинических случаев: на каждом примере — какие сигналы нельзя игнорировать и как предотвратить фатальный исход.</div>
+          </div>
+
+          <div class="program-item">
+            <div class="program-time">17:55 – 18:00</div>
+            <div class="program-title">Закрытие конференции</div>
+            <div class="program-desc">Подведение итогов, ответы на оставшиеся вопросы, заключительное слово всех спикеров.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="event-register-band">
+        <div class="event-register-inner">
+          <h2>Места ограничены — забронируйте участие</h2>
+          <p>Оставьте заявку, и мы свяжемся с вами для подтверждения, или напишите напрямую в любой мессенджер.</p>
+          <div class="event-register-btns">
+            <button class="btn-primary" style="background:#fff;color:var(--forest);" onclick="openEventModal()">Записаться →</button>
+            <a href="mailto:648501@mail.ru" class="btn-outline" style="border-color:#fff;color:#fff;"><svg class="ic" viewBox="0 0 24 24" style="stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> 648501@mail.ru</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="event-sidebar">
+      <div class="event-info-card">
+        <h3>О мероприятии</h3>
+        <div class="event-info-row"><span class="ei"><svg class="ic" viewBox="0 0 24 24" style="width:20px;height:20px;stroke:var(--forest-light);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><rect x="3" y="4" width="18" height="18" rx="3"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><div><strong>Дата</strong><span>27–29 ноября 2026</span></div></div>
+        <div class="event-info-row"><span class="ei"><svg class="ic" viewBox="0 0 24 24" style="width:20px;height:20px;stroke:var(--forest-light);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg></span><div><strong>Время</strong><span>10:00 – 18:00</span></div></div>
+        <div class="event-info-row"><span class="ei"><svg class="ic" viewBox="0 0 24 24" style="width:20px;height:20px;stroke:var(--forest-light);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.8"/></svg></span><div><strong>Место</strong><span>г. Краснодар — точный адрес площадки высылаем при регистрации</span></div></div>
+        <div class="event-info-row"><span class="ei"><svg class="ic" viewBox="0 0 24 24" style="width:20px;height:20px;stroke:var(--forest-light);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M22 9L12 4 2 9l10 5 10-5z"/><path d="M6 11.5V17c0 1.4 2.7 3 6 3s6-1.6 6-3v-5.5"/></svg></span><div><strong>Для кого</strong><span>Ветеринарные врачи общей практики, терапевты, хирурги</span></div></div>
+      </div>
+
+      <div class="event-promo-card">
+        <h3>Скидка для участников</h3>
+        <p><b>Акция для участников наших мероприятий:</b> размещение со скидкой 20% в гостинице «Хемингуэй» по адресу г. Краснодар, ул. Энергетиков, д. 5.</p>
+        <a class="event-contact-link" href="tel:+78005002054"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M21 15.5c0 1-.8 2.5-2 2.5C11.5 18 6 12.5 6 5c0-1.2 1.5-2 2.5-2 .4 0 .8.3 1 .7l1.5 3c.2.5.1 1-.3 1.3L9 9.3c.9 2 2.7 3.8 4.7 4.7l1.3-1.7c.3-.4.8-.5 1.3-.3l3 1.5c.4.2.7.6.7 1z"/></svg> 8 800 500-20-54 — бронь номера</a>
+        <p style="margin-top:1rem;margin-bottom:.4rem;">За промокодом на скидку 20% обращайтесь к организаторам:</p>
+        <a class="event-contact-link" href="tel:+79883344020"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M21 15.5c0 1-.8 2.5-2 2.5C11.5 18 6 12.5 6 5c0-1.2 1.5-2 2.5-2 .4 0 .8.3 1 .7l1.5 3c.2.5.1 1-.3 1.3L9 9.3c.9 2 2.7 3.8 4.7 4.7l1.3-1.7c.3-.4.8-.5 1.3-.3l3 1.5c.4.2.7.6.7 1z"/></svg> 8 988 334-40-20</a>
+      </div>
+
+      <div class="event-contact-card">
+        <h3>Записаться / уточнить детали</h3>
+        <a class="event-contact-link" href="mailto:648501@mail.ru"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> 648501@mail.ru</a>
+        <a class="event-contact-link" href="tel:+79166574066"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M21 15.5c0 1-.8 2.5-2 2.5C11.5 18 6 12.5 6 5c0-1.2 1.5-2 2.5-2 .4 0 .8.3 1 .7l1.5 3c.2.5.1 1-.3 1.3L9 9.3c.9 2 2.7 3.8 4.7 4.7l1.3-1.7c.3-.4.8-.5 1.3-.3l3 1.5c.4.2.7.6.7 1z"/></svg> 8-916-657-40-66</a>
+        <a class="event-contact-link" href="tel:+79883344020"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M21 15.5c0 1-.8 2.5-2 2.5C11.5 18 6 12.5 6 5c0-1.2 1.5-2 2.5-2 .4 0 .8.3 1 .7l1.5 3c.2.5.1 1-.3 1.3L9 9.3c.9 2 2.7 3.8 4.7 4.7l1.3-1.7c.3-.4.8-.5 1.3-.3l3 1.5c.4.2.7.6.7 1z"/></svg> 8-988-334-40-20</a>
+        <div class="event-contact-note">Первый номер — все мессенджеры (Telegram, WhatsApp, MAX, Viber). Второй — все мессенджеры, кроме WhatsApp.</div>
+      </div>
+
+      <div class="event-share-card">
+        <h3>Поделиться событием</h3>
+        <div class="share-buttons">
+          <a href="javascript:void(0)" class="share-btn share-vk" onclick="shareEvent('vk')">VK</a>
+          <a href="javascript:void(0)" class="share-btn share-tg" onclick="shareEvent('tg')">Telegram</a>
+          <a href="javascript:void(0)" class="share-btn share-copy" onclick="shareEvent('copy')"><svg class="ic" viewBox="0 0 24 24" style="stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M9 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M15 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5"/></svg> Копировать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-brand">Полный путь сложного неврологического пациента</div>
+    <p>Практическая конференция для ветеринарных врачей. 27–29 ноября 2026, г. Краснодар.</p>
+    <p>648501@mail.ru&nbsp; · &nbsp;8-916-657-40-66&nbsp; · &nbsp;8-988-334-40-20</p>
+  </div>
+  <div class="foot-bottom">© 2026 · Все права защищены</div>
+</footer>
+
+<button class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Наверх">↑</button>
+
+<!-- ===== REGISTRATION MODAL ===== -->
+<div class="modal-overlay" id="eventModalOverlay" onclick="closeEventModalOutside(event)">
+  <div class="modal" id="eventModalBox">
+    <button class="modal-close" onclick="closeEventModal()">✕</button>
+    <div id="eventModalForm">
+      <div class="modal-eyebrow">Конференция · 27–29 ноября</div>
+      <h2>Записаться на конференцию</h2>
+      <p class="modal-sub">«Полный путь сложного неврологического пациента: от приёма до выписки». Оставьте контакты — мы свяжемся с вами и пришлём точный адрес и детали оплаты.</p>
+      <div class="form-group">
+        <label>Ваше имя <span style="color:#dc2626;">*</span></label>
+        <input type="text" id="ef-name" placeholder="Как вас зовут?">
+      </div>
+      <div class="form-group">
+        <label>Телефон <span style="color:#dc2626;">*</span></label>
+        <input type="tel" id="ef-phone" placeholder="+7 (___) ___-__-__" maxlength="18" inputmode="tel" autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label>Email <span style="color:var(--text-muted);font-weight:400;text-transform:none;letter-spacing:0;">(необязательно)</span></label>
+        <input type="email" id="ef-email" placeholder="your@email.ru" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label>Комментарий (необязательно)</label>
+        <textarea id="ef-comment" placeholder="Клиника, город, вопросы к организаторам..."></textarea>
+      </div>
+      <div id="ef-consent-wrap" style="margin-bottom:1.4rem;border-radius:var(--radius-sm);border:1.5px solid var(--sand-mid);padding:14px 16px;background:var(--cream);transition:border-color 0.2s,background 0.2s;cursor:pointer;" onclick="toggleEventConsent()">
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <div id="ef-consent-box" style="width:22px;height:22px;min-width:22px;border-radius:6px;border:2px solid var(--sand-mid);background:#fff;display:flex;align-items:center;justify-content:center;margin-top:1px;transition:all 0.2s;flex-shrink:0;">
+            <svg id="ef-consent-check" width="13" height="13" viewBox="0 0 13 13" style="display:none;"><polyline points="2,7 5,10 11,3" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <input type="checkbox" id="ef-consent" style="display:none;">
+          <span style="font-size:13px;color:var(--text-soft);line-height:1.65;font-weight:500;user-select:none;">Я даю согласие на обработку моих персональных данных (ФИО, email, номер телефона) в целях записи на конференцию и обратной связи, в соответствии с Федеральным законом №152-ФЗ «О персональных данных».</span>
+        </div>
+        <div id="ef-consent-error" style="display:none;color:#dc2626;font-size:12px;font-weight:600;margin-top:8px;margin-left:34px;align-items:center;gap:6px;"><svg class="ic" viewBox="0 0 24 24" style="stroke:#dc2626;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;vertical-align:-2px;"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Необходимо дать согласие на обработку персональных данных</div>
+      </div>
+      <button class="btn-primary" id="ef-submit-btn" style="width:100%;justify-content:center;font-size:16px;padding:16px;" onclick="submitEventForm()">Отправить заявку →</button>
+      <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:12px;">На следующем шаге выберете, куда отправить — WhatsApp или почта</p>
+    </div>
+    <div class="form-success" id="eventModalSuccess" style="display:none;">
+      <svg class="ic-lg" viewBox="0 0 24 24" style="fill:none;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 1rem;display:block;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <h3>Осталось отправить</h3>
+      <p>Заявка готова. Выберите, каким способом её отправить — откроется чат или письмо с уже заполненным текстом:</p>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:1.5rem;">
+        <a id="ef-send-wa" class="btn-primary" style="justify-content:center;background:#25d366;" href="#" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" style="stroke:#fff;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M21 11.5a8.38 8.38 0 0 1-4.5 7.45A8.5 8.5 0 0 1 3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11z"/></svg> Отправить в WhatsApp</a>
+        <a id="ef-send-mail" class="btn-outline" style="justify-content:center;" href="#"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Отправить на почту</a>
+      </div>
+      <div style="margin-top:1.5rem;background:var(--forest-faint);border-radius:var(--radius-sm);padding:1.2rem;border:1px solid var(--forest-pale);text-align:left;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--forest-light);margin-bottom:8px;">Или напрямую</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <a href="tel:+79166574066" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--text-dark);font-weight:700;font-size:15px;"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M21 15.5c0 1-.8 2.5-2 2.5C11.5 18 6 12.5 6 5c0-1.2 1.5-2 2.5-2 .4 0 .8.3 1 .7l1.5 3c.2.5.1 1-.3 1.3L9 9.3c.9 2 2.7 3.8 4.7 4.7l1.3-1.7c.3-.4.8-.5 1.3-.3l3 1.5c.4.2.7.6.7 1z"/></svg> 8-916-657-40-66</a>
+          <a href="tel:+79883344020" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--text-dark);font-weight:700;font-size:15px;"><svg class="ic" viewBox="0 0 24 24" style="stroke:var(--forest);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round"><path d="M21 15.5c0 1-.8 2.5-2 2.5C11.5 18 6 12.5 6 5c0-1.2 1.5-2 2.5-2 .4 0 .8.3 1 .7l1.5 3c.2.5.1 1-.3 1.3L9 9.3c.9 2 2.7 3.8 4.7 4.7l1.3-1.7c.3-.4.8-.5 1.3-.3l3 1.5c.4.2.7.6.7 1z"/></svg> 8-988-334-40-20</a>
+        </div>
+      </div>
+      <button class="btn-outline" style="margin-top:1.2rem;width:100%;justify-content:center;" onclick="closeEventModal()">Закрыть</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+function openEventModal(){
+  document.getElementById('eventModalOverlay').classList.add('open');
+  document.getElementById('eventModalForm').style.display='block';
+  document.getElementById('eventModalSuccess').style.display='none';
+  document.body.style.overflow='hidden';
+}
+function closeEventModal(){
+  document.getElementById('eventModalOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+function closeEventModalOutside(e){
+  if(e.target === document.getElementById('eventModalOverlay')) closeEventModal();
+}
+function toggleEventConsent(){
+  var cb=document.getElementById('ef-consent');
+  var box=document.getElementById('ef-consent-box');
+  var check=document.getElementById('ef-consent-check');
+  var wrap=document.getElementById('ef-consent-wrap');
+  var err=document.getElementById('ef-consent-error');
+  cb.checked=!cb.checked;
+  if(cb.checked){
+    box.style.background='var(--forest)'; box.style.borderColor='var(--forest)';
+    check.style.display='block'; wrap.style.borderColor='var(--forest)';
+    wrap.style.background='var(--forest-faint)'; err.style.display='none';
+  } else {
+    box.style.background='#fff'; box.style.borderColor='var(--sand-mid)';
+    check.style.display='none'; wrap.style.borderColor='var(--sand-mid)';
+    wrap.style.background='var(--cream)';
+  }
+}
+function showToast(msg){
+  var t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('show');
+  clearTimeout(window._toastTimer);
+  window._toastTimer=setTimeout(function(){ t.classList.remove('show'); }, 3200);
+}
+function submitEventForm(){
+  var name=(document.getElementById('ef-name').value||'').trim();
+  var phone=document.getElementById('ef-phone').value.trim();
+  var email=(document.getElementById('ef-email').value||'').trim();
+  var comment=document.getElementById('ef-comment').value.trim();
+  var consent=document.getElementById('ef-consent');
+
+  if(!name){ showToast('Пожалуйста, введите ваше имя'); document.getElementById('ef-name').focus(); return; }
+  if(!phone || phone.replace(/\D/g,'').length < 10){ showToast('Пожалуйста, введите номер телефона'); document.getElementById('ef-phone').focus(); return; }
+  if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){ showToast('Проверьте формат email'); document.getElementById('ef-email').focus(); return; }
+  if(!consent || !consent.checked){
+    var wrap=document.getElementById('ef-consent-wrap'); var err=document.getElementById('ef-consent-error');
+    wrap.style.borderColor='#dc2626'; wrap.style.background='#fef2f2'; err.style.display='block';
+    wrap.scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+
+  var subject='Заявка на конференцию 27-29 ноября — ' + name;
+  var text='Заявка на конференцию «Полный путь сложного неврологического пациента», 27–29 ноября 2026, Краснодар.\nИмя: ' + name + '\nТелефон: ' + phone + (email? '\nEmail: ' + email : '') + (comment? '\nКомментарий: ' + comment : '');
+
+  var waLink = 'https://wa.me/79166574066?text=' + encodeURIComponent(text);
+  var mailLink = 'mailto:648501@mail.ru?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(text);
+  document.getElementById('ef-send-wa').href = waLink;
+  document.getElementById('ef-send-mail').href = mailLink;
+
+  document.getElementById('eventModalForm').style.display='none';
+  document.getElementById('eventModalSuccess').style.display='block';
+}
+function shareEvent(network){
+  var url=window.location.href;
+  var title='Конференция «Полный путь сложного неврологического пациента» — 27–29 ноября';
+  if(network==='vk'){
+    window.open('https://vk.com/share.php?url='+encodeURIComponent(url)+'&title='+encodeURIComponent(title), '_blank', 'noopener,width=600,height=500');
+  } else if(network==='tg'){
+    window.open('https://t.me/share/url?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(title), '_blank', 'noopener,width=600,height=500');
+  } else if(network==='copy'){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){ showToast('Ссылка скопирована'); }).catch(function(){ showToast(url); });
+    } else { showToast(url); }
+  }
+}
+
+/* ===== 3D tilt on cards ===== */
+(function(){
+  var cards = document.querySelectorAll('.speaker-card, .event-hero-banner');
+  var isTouch = window.matchMedia('(hover: none)').matches;
+  if(isTouch) return;
+  cards.forEach(function(card){
+    var raf = null;
+    card.addEventListener('mousemove', function(e){
+      var r = card.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - 0.5;
+      var py = (e.clientY - r.top) / r.height - 0.5;
+      if(raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(function(){
+        var ry = px * 8;
+        var rx = -py * 8;
+        card.style.transform = 'perspective(900px) rotateX(' + rx.toFixed(2) + 'deg) rotateY(' + ry.toFixed(2) + 'deg) translateY(-4px)';
+      });
+    });
+    card.addEventListener('mouseleave', function(){
+      if(raf) cancelAnimationFrame(raf);
+      card.style.transform = '';
+    });
+  });
+})();
+
+/* ===== scroll reveal ===== */
+(function(){
+  var targets = document.querySelectorAll('.event-block, .speaker-card, .program-item, .event-info-card, .event-promo-card, .event-contact-card, .event-share-card, .event-register-band');
+  targets.forEach(function(el, i){
+    el.classList.add('reveal', 'reveal-stagger');
+    el.style.setProperty('--i', (i % 6));
+  });
+
+  function revealAll(){ targets.forEach(function(el){ el.classList.add('in'); }); }
+
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0, rootMargin:'0px 0px -10% 0px'});
+    targets.forEach(function(el){ io.observe(el); });
+  } else {
+    revealAll();
+  }
+
+  /* safety net: never leave content permanently hidden */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', revealAll);
+  });
+  window.addEventListener('load', function(){ setTimeout(revealAll, 1800); });
+  setTimeout(revealAll, 3500);
+})();
+</script>
+</body>
+</html>
