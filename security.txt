@@ -1,4 +1,0 @@
-Contact: mailto:648501@mail.ru
-Expires: 2027-08-17T00:00:00Z
-Preferred-Languages: ru, en
-Canonical: https://vetoc.ru/sotnikov/security.txt
